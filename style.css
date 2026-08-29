@@ -1,6 +1,6 @@
 :root {
-  --fur: #a65c24;
-  --fur-dark: #7a3f16;
+  --accent: #a65c24;
+  --accent-deep: #7a3f16;
   --bg: #fdf8f2;
   --panel: #ffffff;
   --ink: #2c2118;
@@ -11,8 +11,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --fur: #d99155;
-    --fur-dark: #f0b986;
+    --accent: #d99155;
+    --accent-deep: #f0b986;
     --bg: #1b1511;
     --panel: #241d17;
     --ink: #f2e9df;
@@ -48,7 +48,7 @@ header.site .app {
   display: block;
   font-size: 1.05rem;
   font-weight: 700;
-  color: var(--fur);
+  color: var(--accent);
   text-decoration: none;
   letter-spacing: 0.02em;
 }
@@ -57,10 +57,10 @@ header.site .maker { color: var(--ink-soft); font-size: 0.85rem; }
 
 h1 { font-size: 1.6rem; line-height: 1.4; margin: 0 0 0.5rem; }
 h2 { font-size: 1.25rem; margin: 3rem 0 1rem; padding-top: 0.5rem; border-top: 1px solid var(--line); }
-h3 { font-size: 1.02rem; margin: 2rem 0 0.6rem; color: var(--fur-dark); }
+h3 { font-size: 1.02rem; margin: 2rem 0 0.6rem; color: var(--accent-deep); }
 
 p, li { color: var(--ink); }
-a { color: var(--fur); }
+a { color: var(--accent); }
 
 .meta { color: var(--ink-soft); font-size: 0.9rem; margin: 0 0 2rem; }
 
@@ -81,11 +81,11 @@ a { color: var(--fur); }
   font-size: 0.88rem;
 }
 
-.langnav a:hover { border-color: var(--fur); }
+.langnav a:hover { border-color: var(--accent); }
 
 .notice {
   background: var(--accent-soft);
-  border-left: 4px solid var(--fur);
+  border-left: 4px solid var(--accent);
   border-radius: 0 8px 8px 0;
   padding: 1rem 1.2rem;
   margin: 2rem 0;
@@ -128,8 +128,8 @@ li { margin: 0.35rem 0; }
   color: inherit;
 }
 
-.card:hover { border-color: var(--fur); }
-.card strong { display: block; color: var(--fur); font-size: 1.05rem; }
+.card:hover { border-color: var(--accent); }
+.card strong { display: block; color: var(--accent); font-size: 1.05rem; }
 .card span { color: var(--ink-soft); font-size: 0.9rem; }
 
 footer.site {
